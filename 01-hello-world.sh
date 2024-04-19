@@ -1,1 +1,2 @@
-This is sample script.
+#!/bin/bash
+echo "Hello, i'm Practicing shell script"
