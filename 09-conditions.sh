@@ -8,6 +8,6 @@ echo "Given number $NUMBER is grater than 10"
 
 else 
 
-echo "Given number is $NUMBER less than 10"
+echo "Given number is $NUMBER equal 10"
 
 fi
