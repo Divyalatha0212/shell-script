@@ -3,10 +3,10 @@
 MOVIES=("RRR" "DJ" "SSC")
  
 
- echo "first movie name is:${MOVIE[0]}"
+ echo "first movie name is: ${MOVIES[0]}"
 
- echo "second movie name is:${MOVIE[1]}"
+ echo "second movie name is: ${MOVIES[1]}"
  
- echo "third movie name is:${MoVIE[2]}"
+ echo "third movie name is: ${MoVIES[2]}"
 
- echo "print all movie names are:${MOVIE[@]}"
+ echo "print all movie names are: ${MOVIES[@]}"
