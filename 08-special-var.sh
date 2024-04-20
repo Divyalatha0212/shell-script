@@ -6,3 +6,4 @@ echo "all variables: $@"
 
 echo "script name is $0"
 echo "currnet working directory is: $PWD"
+echo "Home Diractory of Current User is : $HOME"
