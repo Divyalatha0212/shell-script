@@ -7,6 +7,6 @@ MOVIES=("RRR" "DJ" "SSC")
 
  echo "second movie name is: ${MOVIES[1]}"
  
- echo "third movie name is: ${MoVIES[2]}"
+ echo "third movie name is: ${MOVIES[2]}"
 
  echo "print all movie names are: ${MOVIES[@]}"
