@@ -10,3 +10,4 @@ echo "Home Diractory of Current User is : $HOME"
 echo "which user is running: $USER"
 echo "who is the host: $HOSTNAME"
 echo "Process ID: $$"
+sleep 60
