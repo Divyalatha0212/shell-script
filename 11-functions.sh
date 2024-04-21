@@ -7,7 +7,7 @@ echo "What are you doing $2"
 
 }
 
-if [ &USERID -ne 0 ]
+if [&USERID -ne 0]
 then
 echo " please run this in root "
 exit 1
