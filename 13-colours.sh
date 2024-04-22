@@ -36,3 +36,6 @@ VALIDATE $? "Installing Git"
 
 dnf install docker -y &>>$LOGFILE
 VALIDATE $? "Installing docker"
+
+dnf install nginx -y &>>$LOGFILE
+VALIDATE $? "Installing Nginx"
