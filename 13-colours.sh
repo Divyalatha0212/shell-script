@@ -34,5 +34,5 @@ VALIDATE $? "Installing MySQL"
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing Git"
 
-dnf install nginix -y &>>$LOGFILE
+dnf install nginx -y &>>$LOGFILE
 VALIDATE $? "Installing nginx"
