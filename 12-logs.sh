@@ -7,6 +7,7 @@ LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 
 
+
 VALIDATE(){
 
         if [ $1 -ne 0 ]
@@ -27,7 +28,7 @@ else
  fi
 
 dnf install mysql -y
-VALIDATE $? "Installing MYSQL" &>> $LOGFILE
+VALIDATE $? "Installing MYSQL" &>>$LOGFILE
 
-dnf install git -y &>> $LOGFILE
+dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing Git"
