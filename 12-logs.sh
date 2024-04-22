@@ -1,8 +1,10 @@
 #!/bin/bash
 USERID=$(id -u)
-TIMESTAMP=($date +%F-%H-%M-%S)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." F1)
 LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
+
+
 
 
 VALIDATE(){
