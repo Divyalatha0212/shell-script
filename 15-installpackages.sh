@@ -37,5 +37,5 @@ fi
 dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "installing the MYSQL"
 
-DNF install docker -y
+dnf  install docker -y
 VALIDATE $? "installing the DOCKER" &>>$LOGFILE
