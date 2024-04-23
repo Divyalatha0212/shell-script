@@ -3,7 +3,8 @@
 USERID=&(id -u) #ROOT USER
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1) #SCRIPT NAME
 TIMESTAMP=$(date +%F-%H-%M-%S) #IT GIVES THE TIME 
-LOGFILE=/tmp/$SCRIPT_NAME/$TIMESTAMP.log #creating the temporary directory and svae the logfiles into it.
+#LOGFILE=/tmp/$SCRIPT_NAME/$TIMESTAMP.log #creating the temporary directory and svae the logfiles into it.
+LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 R="\e[31m"
 G="\e[32m"
