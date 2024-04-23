@@ -11,7 +11,7 @@ N="\e[0m"
 
 echo "script started executing at $TIMESTAMP"
 
-  if [ $USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then
     echo "please run the script with root access."
     exit 1
