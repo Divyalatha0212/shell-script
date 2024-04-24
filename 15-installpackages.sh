@@ -3,7 +3,7 @@
 USERID=$(id -u) #ROOT USER
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-LOGFILES=/tmp/$SCRIPTNAME-$TIMESTAMP.log
+LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 
 B="\e[34m"
 M="\e[35m"
@@ -20,12 +20,12 @@ fi
 for i in $@
 do
 echo "packages to install: $i"
-dnf list installed  $i &>>$LOGFILES
+dnf list installed  $i &>>$LOGFILE
 if [ $? -eq 0 ]
 then
 echo -e "$i already installed---$B SKIPPING $N"
 else
-echo -e "$i not installed---$M SHOULD INSTALL $N"
+dnf install $i -y &>>$LOGFILE
 fi
 
 done
