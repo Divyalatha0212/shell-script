@@ -15,7 +15,7 @@ if [ $1 -ne 0 ]
 then
 echo -e "$2---$B FAILURE $N"
 else
-echo -e "$2---$M SKIPPING $N"
+echo -e "$2---$B SUCCESS $N"
 fi
 
 
