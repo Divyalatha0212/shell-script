@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=&(id -u) #ROOT USER
+USERID=$(id -u) #ROOT USER
 
 if [ $USERID -ne 0 ]
 then
