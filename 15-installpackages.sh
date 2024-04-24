@@ -21,7 +21,7 @@ for i in $@
 do
 echo "packages to install: $i"
 dnf instaaled  $i &>>$LOGFILES
-if [$? -eq 0]
+if [ $? -eq 0 ]
 then
 echo "$i already installed---$B SKIPPING $N"
 echo "$i Not installed---$M SHOULD INSTALL $N"
