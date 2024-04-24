@@ -5,9 +5,9 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILES=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 
-B="e\[33m"
-M="\e[35m"
-N="\e[0m"
+#B="e\[33m"
+#M="\e[35m"
+#N="\e[0m"
 
 if [ $USERID -ne 0 ]
 then
@@ -23,9 +23,9 @@ echo "packages to install: $i"
 dnf instaaled  $i &>>$LOGFILES
 if [ $? -eq 0 ]
 then
-echo "$i already installed---$B SKIPPING $N"
+echo "$i already installed---SKIPPING"
 else
-echo "$i Not installed---$M SHOULD INSTALL $N"
+echo "$i Not installed---SHOULD INSTALL"
 fi
 
 done
