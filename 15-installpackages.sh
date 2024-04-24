@@ -24,6 +24,7 @@ dnf instaaled  $i &>>$LOGFILES
 if [ $? -eq 0 ]
 then
 echo "$i already installed---$B SKIPPING $N"
+else
 echo "$i Not installed---$M SHOULD INSTALL $N"
 fi
 
