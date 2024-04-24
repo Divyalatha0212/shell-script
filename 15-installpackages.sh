@@ -9,6 +9,17 @@ B="\e[34m"
 M="\e[35m"
 N="\e[0m"
 
+VALIDATE()
+{
+if [ $1 -ne 0]
+then
+echo -e "$2---$B FAILURE $N"
+else
+echo -e "$2---$M SKIPPING $N"
+fi
+
+
+}
 if [ $USERID -ne 0 ]
 then
 echo "run this script with root user."
@@ -26,6 +37,8 @@ then
 echo -e "$i already installed---$B SKIPPING $N"
 else
 dnf install $i -y &>>$LOGFILE
+VALIDATE $? "Installation Of $i"
+
 fi
 
 done
