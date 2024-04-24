@@ -20,12 +20,12 @@ fi
 for i in $@
 do
 echo "packages to install: $i"
-dnf instaaled  $i &>>$LOGFILES
+dnf list installed  $i &>>$LOGFILES
 if [ $? -eq 0 ]
 then
 echo -e "$i already installed---$B SKIPPING $N"
 else
-echo -e "$i Not installed---$M SHOULD INSTALL $N"
+echo -e "$i not installed---$M SHOULD INSTALL $N"
 fi
 
 done
