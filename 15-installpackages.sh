@@ -10,7 +10,10 @@ else
 echo "you are the root user."
 fi
 
-echo "all packages are: $@"
+for i in $@
+do
+echo "packages to install: $i"
+done
 
 
 
